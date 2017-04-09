@@ -13,6 +13,8 @@
 		DE21E0101E96EC220096FB56 /* PhoneCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE21E00E1E96EC220096FB56 /* PhoneCollector.xcdatamodeld */; };
 		DE21E0121E96EC220096FB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE21E0111E96EC220096FB56 /* Assets.xcassets */; };
 		DE21E0151E96EC220096FB56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE21E0131E96EC220096FB56 /* LaunchScreen.storyboard */; };
+		DE21E01E1E96F19A0096FB56 /* iphone-8-concept.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE21E01D1E96F19A0096FB56 /* iphone-8-concept.jpg */; };
+		DE21E0211E96F3310096FB56 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21E0201E96F3310096FB56 /* PhoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DE21E0111E96EC220096FB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE21E0141E96EC220096FB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE21E0161E96EC220096FB56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE21E01D1E96F19A0096FB56 /* iphone-8-concept.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-8-concept.jpg"; path = "Assets.xcassets/iphone-8-concept.imageset/iphone-8-concept.jpg"; sourceTree = "<group>"; };
+		DE21E0201E96F3310096FB56 /* PhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,9 @@
 		DE21E0061E96EC220096FB56 /* PhoneCollector */ = {
 			isa = PBXGroup;
 			children = (
+				DE21E01F1E96F1A40096FB56 /* Images */,
+				DE21E01C1E96ECAD0096FB56 /* View */,
 				DE21E0071E96EC220096FB56 /* AppDelegate.swift */,
-				DE21E0091E96EC220096FB56 /* ViewController.swift */,
 				DE21E00B1E96EC220096FB56 /* Main.storyboard */,
 				DE21E0111E96EC220096FB56 /* Assets.xcassets */,
 				DE21E0131E96EC220096FB56 /* LaunchScreen.storyboard */,
@@ -65,6 +70,23 @@
 				DE21E00E1E96EC220096FB56 /* PhoneCollector.xcdatamodeld */,
 			);
 			path = PhoneCollector;
+			sourceTree = "<group>";
+		};
+		DE21E01C1E96ECAD0096FB56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE21E0091E96EC220096FB56 /* ViewController.swift */,
+				DE21E0201E96F3310096FB56 /* PhoneViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DE21E01F1E96F1A40096FB56 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DE21E01D1E96F19A0096FB56 /* iphone-8-concept.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE21E01E1E96F19A0096FB56 /* iphone-8-concept.jpg in Resources */,
 				DE21E0151E96EC220096FB56 /* LaunchScreen.storyboard in Resources */,
 				DE21E0121E96EC220096FB56 /* Assets.xcassets in Resources */,
 				DE21E00D1E96EC220096FB56 /* Main.storyboard in Resources */,
@@ -141,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE21E00A1E96EC220096FB56 /* ViewController.swift in Sources */,
+				DE21E0211E96F3310096FB56 /* PhoneViewController.swift in Sources */,
 				DE21E0081E96EC220096FB56 /* AppDelegate.swift in Sources */,
 				DE21E0101E96EC220096FB56 /* PhoneCollector.xcdatamodeld in Sources */,
 			);
@@ -308,6 +332,7 @@
 				DE21E01B1E96EC220096FB56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
