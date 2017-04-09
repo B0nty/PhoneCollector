@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" id="cp6-ni-hxS">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sXp-EV-GCU">
                             <connections>
-                                <segue destination="gKR-bm-9lz" kind="show" id="Vvj-Ez-jsy"/>
+                                <segue destination="gKR-bm-9lz" kind="show" identifier="phoneSegue" id="Vvj-Ez-jsy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -85,6 +85,14 @@
                                     <action selector="addTapped:" destination="gKR-bm-9lz" eventType="touchUpInside" id="jxW-jR-fTp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGt-De-ISd">
+                                <rect key="frame" x="165" y="396" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="gKR-bm-9lz" eventType="touchUpInside" id="bFK-QQ-NLp"/>
+                                    <action selector="deleteTapped:" destination="gKR-bm-9lz" eventType="touchUpInside" id="irk-A8-oO7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -94,8 +102,10 @@
                             <constraint firstItem="kjq-eE-WJu" firstAttribute="top" secondItem="JnH-Fq-2f2" secondAttribute="bottom" constant="20" id="GfH-ka-Ssc"/>
                             <constraint firstItem="scZ-K0-ihA" firstAttribute="top" secondItem="lgK-91-0oe" secondAttribute="bottom" constant="291" id="Ijf-wZ-vCJ"/>
                             <constraint firstItem="JnH-Fq-2f2" firstAttribute="leading" secondItem="kjq-eE-WJu" secondAttribute="leading" id="Owd-z5-rOp"/>
+                            <constraint firstItem="jGt-De-ISd" firstAttribute="centerX" secondItem="lgK-91-0oe" secondAttribute="centerX" id="RWp-rj-0rE"/>
                             <constraint firstItem="JnH-Fq-2f2" firstAttribute="centerX" secondItem="7VO-fu-9U8" secondAttribute="centerX" id="VfV-Rk-Rwk"/>
                             <constraint firstItem="JnH-Fq-2f2" firstAttribute="leading" secondItem="7VO-fu-9U8" secondAttribute="leadingMargin" constant="31" id="Wvd-zc-1FG"/>
+                            <constraint firstItem="jGt-De-ISd" firstAttribute="top" secondItem="lgK-91-0oe" secondAttribute="bottom" constant="20" id="ZES-8u-gcJ"/>
                             <constraint firstItem="JnH-Fq-2f2" firstAttribute="top" secondItem="Oah-6N-S0i" secondAttribute="bottom" constant="20" id="vhf-vk-Ybi"/>
                         </constraints>
                     </view>
@@ -114,6 +124,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="lgK-91-0oe" id="hWD-tK-OUf"/>
+                        <outlet property="deleteButton" destination="jGt-De-ISd" id="fhG-6t-sQ5"/>
                         <outlet property="modelLabel" destination="kjq-eE-WJu" id="4gc-Rj-8dU"/>
                         <outlet property="phoneImage" destination="JnH-Fq-2f2" id="VPV-HK-tzU"/>
                     </connections>

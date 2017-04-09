@@ -47,5 +47,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imageView?.image = UIImage(data: phone.image! as Data)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let phone = phones[indexPath.row]
+        performSegue(withIdentifier: "phoneSegue", sender: phone)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! addPhoneViewController
+        nextVC.phone = sender as? Phones
+        
+    }
 }
 
